@@ -2,7 +2,7 @@ const STORE = [
   {
     question: "How many Star Wars ‘Episodes” are there? (pre Disney)",
     answers: [2, 4, 6, 8],
-    correctAnswer: "2",
+    correctAnswer: "6",
     correctImg: 'https://banner2.kisspng.com/20180402/rww/kisspng-han-solo-luke-skywalker-chewbacca-leia-organa-solo-cosplay-5ac288bead74e8.0596458915226984307105.jpg',
     altCorrect: 'Han Solo',
     wrongImg: 'https://banner2.kisspng.com/20180528/tje/kisspng-admiral-ackbar-anakin-skywalker-galactic-civil-war-5b0bdaf8575b03.3381948915275036083578.jpg',

@@ -23,24 +23,24 @@ function questSpawn () {
     <input type="radio" value="${STORE[qNum].answers[3]}" name="answer" required>
     <span>${STORE[qNum].answers[3]}</span>
     </label>
-    <button type="submit" class="submitButton">Fire!</button>
+    <button type="submit" class="submitButton">submit</button>
     </fieldset>
     </form>
     </div>`;
   } else {
-    renderResults();
+    userResults();
     restartQuiz();
     $('.qNum').text(10)
   }
 }
 
 function updateQuestNum() {
-  qNum++;
+  qNum ++;
   $(".qNum").text(qNum + 1);
 }
 
 function updateScore() {
-  score++;
+  score ++;
 }
 
 function startQuiz() {
@@ -48,7 +48,7 @@ function startQuiz() {
     $(".startPage").remove();
     $(".showQuest").css("display", "block");
     $(".qNum").text(1);
-    renderQuest();
+    //renderQuest();
   });
 }
 
@@ -75,7 +75,7 @@ function userAnswer() {
 
 function ifCorrect() {
   positiveFeedback();
-  updateScore();
+  newScore();
 }
 
 function ifWrong() {
@@ -84,14 +84,12 @@ function ifWrong() {
 
 function positiveFeedback() {
   let correctAnswer = `${STORE[qNum].correctAnswer}`;
-  $(".showQuest").html(`<div class="posFeedback"><div class="icon"</div><img src="${STORE[qNum].correctImg}" alt="${STORE[qNum].altCorrect}"/></div><p>Great shot, Kid!</p><button type=button class="nextButton">Next</button></div>`
-  );
+  $(".showQuest").html(`<div class="posFeedback"><div class="icon"</div><img src="${STORE[qNum].correctImg}" alt="${STORE[qNum].altCorrect}"/></div><p>Great shot, Kid!</p><button type=button class="nextButton">Next</button></div>`);
 }
 
 function negativeFeedback(){
   let correctAnswer = `${STORE[qNum].correctAnswer}`;
-  $(".showQuest").html(`<div class="posFeedback"><div class="icon"</div><img src="${STORE[qNum].wrongImg}" alt="${STORE[qNum].altWrong}"/></div><p>IT'S A TRAP!</p><br></br>That is not correct.The correct answer is <span>"${correctAnswer}"</span><button type=button class="nextButton">Next</button></div>`
-  );
+  $(".showQuest").html(`<div class="posFeedback"><div class="icon"</div><img src="${STORE[qNum].wrongImg}" alt="${STORE[qNum].altWrong}"/></div><p>IT'S A TRAP!</p><br></br>That is not correct.The correct answer is <span>"${correctAnswer}"</span><button type=button class="nextButton">Next</button></div>`);
 }
 
 function newScore(){
@@ -99,18 +97,27 @@ function newScore(){
   $('.score').text(score);
 }
 
+function usersResults(){
+  //write if/else statement here
+}
+
 function nextQuest(){
-  $('.main').on('click','.nextButton', function (event){
+  $('main').on('click','.nextButton', function (event){
     updateQuestNum();
     renderQuest();
     userAnswer();
   })
 }
 
-function generateQuiz() {
-  startQuiz();
-  nextQuest();
-  userAnswer();
+function restartQuiz(){
+ //Write reload here
 }
 
-generateQuiz();
+function generateQuiz() {
+  startQuiz();
+  renderQuest();
+  userAnswer();
+  nextQuest();
+}
+
+$(generateQuiz)
