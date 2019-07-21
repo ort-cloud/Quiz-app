@@ -1,21 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="style.css" rel="stylesheet" type="text/css" />
-    <title>Star Wars Quiz</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <title>Star Wars Quiz</title>
 </head>
 <p>Title Image here</p>
 <body>
-    <section class=section id='start-view'>
-        <h1>Start Page</h1>
-        <p>Image here</p>
-        <p>Text explaining what user will be quized on</p>
-        <form>
-            <input type='submit' value='Goes to first question'>
-        </form>
-    </section>
+  <header role="banner">
+    <div class='reset'>
+    </div>
+    <div class="rightAnswer">
+      <ul>
+        <li>Question <span class="questionNumber">0</span> of 10</li>
+        <li>Hits: <span class="score">0</span></li>
+      </ul>
+    </div>
+  </header>
+  <main role="main" class="main">
+    <div class="startPage">
+      <h1>Welcome to the Star Wars Quiz.</h1>
+      <p>Are You ready to test your knowledge? The fate of the galaxy depends on it!</p>
+      <button type="button" class="startButton">May the force be with you!</button>
+    </div>
+    <div class="showQuestion"></div>
+  </main>
+<script src="https://code.jquery.com/jquery-3.4.1.js"
+integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+crossorigin="anonymous"></script>
+
 </body>
 </html>
