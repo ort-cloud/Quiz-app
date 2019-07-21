@@ -23,7 +23,7 @@ function questSpawn () {
     <input type="radio" value="${STORE[qNum].answers[3]}" name="answer" required>
     <span>${STORE[qNum].answers[3]}</span>
     </label>
-    <button type="submit" class="submitButton">Submit</button>
+    <button type="submit" class="submitButton">Fire!</button>
     </fieldset>
     </form>
     </div>`;
@@ -72,32 +72,32 @@ function userAnswer() {
   });
 }
 
-function ifCorrect(){
+function ifCorrect() {
   positiveFeedback();
   updateScore();
 }
 
-function ifWrong(){
+function ifWrong() {
   negativeFeedback();
 }
 
-positiveFeedback(){
+function positiveFeedback() {
   let correctAnswer = `${STORE[qNum].correctAnswer}`;
-  $('.showQuest').
+  $(".showQuest").html(
+    `<div class="posFeedback"><div class="icon"</div><img src="${
+      STORE[qNum].correctImg
+    }" alt="${
+      STORE[qNum].altCorrect
+    }"/></div><p>Great shot, Kid!</p><button type=button class="nextButton">Next</button></div>`
+  );
 }
-
-
-
-
-
-
-
 
 
 
 
 function generateQuiz() {
   startQuiz();
+  userAnswer();
 }
 
 $(generateQuiz);
