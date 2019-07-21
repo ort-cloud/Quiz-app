@@ -45,10 +45,10 @@ function updateScore() {
 
 function startQuiz() {
   $(".startPage").on("click", ".startButton", function(event) {
-    $(".startPage").remove();
-    $(".showQuest").css("display", "block");
-    $(".qNum").text(1);
-    renderQuest();
+  $(".startPage").remove();
+  $(".showQuest").css("display", "block");
+  $(".qNum").text(1);
+  renderQuest();
   });
 }
 
@@ -83,16 +83,15 @@ function ifWrong() {
 
 function positiveFeedback() {
   let correctAnswer = `${STORE[qNum].correctAnswer}`;
-  $(".showQuest").html(
-    `<div class="posFeedback"><div class="icon"</div><img src="${
-      STORE[qNum].correctImg
-    }" alt="${
-      STORE[qNum].altCorrect
-    }"/></div><p>Great shot, Kid!</p><button type=button class="nextButton">Next</button></div>`
+  $(".showQuest").html(`<div class="posFeedback"><div class="icon"</div><img src="${STORE[qNum].correctImg}" alt="${STORE[qNum].altCorrect}"/></div><p>Great shot, Kid!</p><button type=button class="nextButton">Next</button></div>`
   );
 }
 
-
+function negativeFeedback(){
+  let correctAnswer = `${STORE[qNum].correctAnswer}`;
+  $(".showQuest").html(`<div class="posFeedback"><div class="icon"</div><img src="${STORE[qNum].wrongImg}" alt="${STORE[qNum].altWrong}"/></div><p>IT'S A TRAP!</p><br></br>That is not correct.The correct answer is <span>"${correctAnswer}"</span><button type=button class="nextButton">Next</button></div>`
+  );
+}
 
 
 function generateQuiz() {
