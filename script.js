@@ -72,6 +72,30 @@ function userAnswer() {
   });
 }
 
+function ifCorrect(){
+  positiveFeedback();
+  updateScore();
+}
+
+function ifWrong(){
+  negativeFeedback();
+}
+
+positiveFeedback(){
+  let correctAnswer = `${STORE[qNum].correctAnswer}`;
+  $('.showQuest').
+}
+
+
+
+
+
+
+
+
+
+
+
 function generateQuiz() {
   startQuiz();
 }
