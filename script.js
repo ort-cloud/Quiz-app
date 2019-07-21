@@ -45,10 +45,10 @@ function updateScore() {
 
 function startQuiz() {
   $(".startPage").on("click", ".startButton", function(event) {
-  $(".startPage").remove();
-  $(".showQuest").css("display", "block");
-  $(".qNum").text(1);
-  renderQuest();
+    $(".startPage").remove();
+    $(".showQuest").css("display", "block");
+    $(".qNum").text(1);
+    renderQuest();
   });
 }
 
@@ -70,6 +70,7 @@ function userAnswer() {
       ifWrong();
     }
   });
+  console.log('userAnswer ran')
 }
 
 function ifCorrect() {
@@ -93,10 +94,23 @@ function negativeFeedback(){
   );
 }
 
+function newScore(){
+  updateScore();
+  $('.score').text(score);
+}
+
+function nextQuest(){
+  $('.main').on('click','.nextButton', function (event){
+    updateQuestNum();
+    renderQuest();
+    userAnswer();
+  })
+}
 
 function generateQuiz() {
   startQuiz();
+  nextQuest();
   userAnswer();
 }
 
-$(generateQuiz);
+generateQuiz();
