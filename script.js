@@ -49,6 +49,7 @@ function startQuiz() {
     $(".startPage").remove();
     $(".showQuest").css("display", "block");
     $(".qNum").text(1);
+    renderQuest();
   });
 }
 
@@ -123,7 +124,6 @@ function restartQuiz(){
 
 function generateQuiz() {
   startQuiz();
-  renderQuest();
   userAnswer();
   nextQuest();
 }
