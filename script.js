@@ -55,6 +55,7 @@ function startQuiz() {
 
 function renderQuest() {
   $(".showQuest").html(questSpawn());
+  userAnswer();
 }
 
 function userAnswer() {
@@ -124,7 +125,6 @@ function restartQuiz(){
 
 function generateQuiz() {
   startQuiz();
-  userAnswer();
   nextQuest();
 }
 
