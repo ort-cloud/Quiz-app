@@ -1,7 +1,7 @@
 let qNum = 0;
 let score = 0;
 
-function questSpawn () {
+function questSpawn() {
   if (qNum < STORE.length) {
     return `<div class="question-${qNum}">
     <h2>${STORE[qNum].question}</h2>
@@ -36,16 +36,16 @@ function questSpawn () {
 }
 
 function updateQuestNum() {
-  qNum ++;
+  qNum++;
   $(".qNum").text(qNum + 1);
 }
 
 function updateScore() {
-  score ++;
+  score++;
 }
 
 function startQuiz() {
-  $(".startPage").on("click", ".startButton", function(event) {
+  $(".startPage").on("click", ".startButton", function (event) {
     $(".startPage").remove();
     $(".showQuest").css("display", "block");
     $(".qNum").text(1);
@@ -55,11 +55,12 @@ function startQuiz() {
 
 function renderQuest() {
   $(".showQuest").html(questSpawn());
+  console.log('renderQuest ran');
   userAnswer();
 }
 
 function userAnswer() {
-  $("form").on("submit", function(event) {
+  $("form").on("submit", function (event) {
     event.preventDefault();
     let selected = $("input:checked");
     let answer = selected.val();
@@ -89,17 +90,17 @@ function positiveFeedback() {
   $(".showQuest").html(`<div class="posFeedback"><div class="icon"</div><img src="${STORE[qNum].correctImg}" alt="${STORE[qNum].altCorrect}"/></div><p>Great shot, Kid!</p><button type=button class="nextButton">Next</button></div>`);
 }
 
-function negativeFeedback(){
+function negativeFeedback() {
   let correctAnswer = `${STORE[qNum].correctAnswer}`;
-  $(".showQuest").html(`<div class="posFeedback"><div class="icon"</div><img src="${STORE[qNum].wrongImg}" alt="${STORE[qNum].altWrong}"/></div><p>IT'S A TRAP!</p><br></br>That is not correct.The correct answer is <span>"${correctAnswer}"</span><button type=button class="nextButton">Next</button></div>`);
+  $(".showQuest").html(`<div class="negFeedback"><div class="icon"</div><img src="${STORE[qNum].wrongImg}" alt="${STORE[qNum].altWrong}"/></div><p>IT'S A TRAP!</p><br></br>That is not correct.The correct answer is <span>"${correctAnswer}"</span><button type=button class="nextButton">Next</button></div>`);
 }
 
-function newScore(){
+function newScore() {
   updateScore();
   $('.score').text(score);
 }
 
-function userResults(){
+function userResults() {
   if (score >= 8) {
     $('.showQuest').html(`<div class="results correctFeedback"><h2>Good. Gooood!</h2><img src="https://banner2.kisspng.com/20180412/eiq/kisspng-star-wars-battlefront-ii-palpatine-anakin-skywalke-darth-vader-5ad00eb85594f7.1932252115235846963506.jpg" alt="Emperor Palpatine"/><p>You got ${score} / 10</p><p>I can feel the force flowing through you!</p><button class="restartButton">Restart Quiz</button></div>`);
   } else if (score < 8 && score >= 5) {
@@ -107,20 +108,19 @@ function userResults(){
   } else {
     $('.showQuest').html(`<div class="results correctFeedback"><h2>I find your lack of knowledge disturbing</h2><img src="https://banner2.kisspng.com/20180329/vhq/kisspng-star-wars-the-force-unleashed-ii-anakin-skywalker-darth-vader-5abd0ea6990b60.5714685715223394946269.jpg" alt="Darth Vader"/><p>You got ${score} / 10</p><p>Do not under estimate the power of the force.</p><button class="restartButton">Restart Quiz</button></div>`);
   }
-  }
+}
 
-function nextQuest(){
-  $('main').on('click','.nextButton', function (event){
+function nextQuest() {
+  $('main').on('click', '.nextButton', function (event) {
     updateQuestNum();
     renderQuest();
-    userAnswer();
   })
 }
 
-function restartQuiz(){
- $('main').on('click', '.restartButton', function(event){
+function restartQuiz() {
+  $('main').on('click', '.restartButton', function (event) {
     location.reload();
- })
+  })
 }
 
 function generateQuiz() {

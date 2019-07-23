@@ -92,7 +92,7 @@ const STORE = [
     altWrong: 'Admiral Ackbar'
   },
   {
-    question: "When Lea tell Han she loves him, what was his response?",
+    question: "When Lea tells Han she loves him, what was his response?",
     answers: ["I love you, too", "Shut up", "I told you so", "I know"],
     correctAnswer: "I know",
     correctImg: 'https://banner2.kisspng.com/20180402/rww/kisspng-han-solo-luke-skywalker-chewbacca-leia-organa-solo-cosplay-5ac288bead74e8.0596458915226984307105.jpg',
