@@ -6,9 +6,9 @@ function questSpawn() {
     return `<div class="question-${qNum}">
     <h2>${STORE[qNum].question}</h2>
     <form>
+    <h3>You may fire when ready.</h3>
     <fieldset>
     <label class="selectAns">
-    <p>You may fire when ready.</p>
     <input type="radio" value="${STORE[qNum].answers[0]}" name="answer" required>
     <span>${STORE[qNum].answers[0]}</span>
     </label>
