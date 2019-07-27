@@ -84,7 +84,7 @@ const STORE = [
   {
     question:
       "What was the name of the bounty hunter who took Han Solo to Jabba the Hutt?",
-    answers: ["Boba Fett", "Lando Calrissian", "Nein Nunb", "C-3PO"],
+    answers: ["Boba Fett", "Lando Calrissian", "Nein Nunb", "Bossk"],
     correctAnswer: "Boba Fett",
     correctImg: 'http://www.sclance.com/clipart/han-solo-clip-art/han-solo-clip-art_964559.png',
     altCorrect: 'Han Solo',
