@@ -110,11 +110,11 @@ function newScore() {
 
 function userResults() {
   if (score >= 8) {
-    $('.showQuest').html(`<div class="win"><h2>Good. Gooood!</h2><img class="high" src="" alt="Emperor Palpatine"/><p>You got ${score} / 10</p><p>I can feel the force flowing through you!</p><button class="restartButton">Restart Quiz</button></div>`);
+    $('.showQuest').html(`<div class="win"><h2>Good. Gooood!</h2><img class="high" src="assets/palpatine.png" alt="Emperor Palpatine"/><p>You got ${score} / 10</p><p>I can feel the force flowing through you!</p><button class="restartButton">Restart Quiz</button></div>`);
   } else if (score < 8 && score >= 5) {
-    $('.showQuest').html(`<div class="almost"><h2>Do, or do not. There is no try.</h2><img class="medium" src="" alt="Master Yoda"/><p>You got ${score} / 10</p><p>You will know when you are calm, at peace...</p><button class="restartButton">Restart Quiz</button></div>`);
+    $('.showQuest').html(`<div class="almost"><h2>Do, or do not. There is no try.</h2><img class="medium" src="assets/yoda.png" alt="Master Yoda"/><p>You got ${score} / 10</p><p>You will know when you are calm, at peace...</p><button class="restartButton">Restart Quiz</button></div>`);
   } else {
-    $('.showQuest').html(`<div class="fail"><h2>I find your lack of knowledge disturbing!</h2><img class="low" src="" alt="Darth Vader"/><p>You got ${score} / 10</p><p>Do not underestimate the power of the force.</p><button class="restartButton">Restart Quiz</button></div>`);
+    $('.showQuest').html(`<div class="fail"><h2>I find your lack of knowledge disturbing!</h2><img class="low" src="assets/vader.png" alt="Darth Vader"/><p>You got ${score} / 10</p><p>Do not underestimate the power of the force.</p><button class="restartButton">Restart Quiz</button></div>`);
   }
 }
 

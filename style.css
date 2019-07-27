@@ -24,8 +24,8 @@ ul {
 }
 
 .logo {
-  height: 25%;
-  width: 25%;
+  height: 20%;
+  width: 20%;
 }
 
 .right-answer {
@@ -157,6 +157,7 @@ img[src='https://tchol.org/images/admiral-ackbar-png-9.png'] {
   height: 30px;
   width: 100px;
   background-color:  #d4b300;
+  margin-top: -1%;
 }
 
 .restartButton:hover {
@@ -164,11 +165,18 @@ img[src='https://tchol.org/images/admiral-ackbar-png-9.png'] {
   color: #d4b300;
 }
 
+.win p {
+  margin: 1%;
+}
+
 .almost p {
   margin-top: 3px;
 }
 
-
+.high {
+  height: 15%;
+  width: 15%;
+}
 
 .medium {
   height: 13%;
