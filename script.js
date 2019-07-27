@@ -110,11 +110,11 @@ function newScore() {
 
 function userResults() {
   if (score >= 8) {
-    $('.showQuest').html(`<div class="win"><h2>Good. Gooood!</h2><img class="high" src="https://www110.lunapic.com/do-not-link-here-use-hosting-instead/156418407564205706?9726548158" alt="Emperor Palpatine"/><p>You got ${score} / 10</p><p>I can feel the force flowing through you!</p><button class="restartButton">Restart Quiz</button></div>`);
+    $('.showQuest').html(`<div class="win"><h2>Good. Gooood!</h2><img class="high" src="" alt="Emperor Palpatine"/><p>You got ${score} / 10</p><p>I can feel the force flowing through you!</p><button class="restartButton">Restart Quiz</button></div>`);
   } else if (score < 8 && score >= 5) {
-    $('.showQuest').html(`<div class="almost"><h2>Do, or do not. There is no try.</h2><img class="medium" src="https://www110.lunapic.com/do-not-link-here-use-hosting-instead/156418407564205706?2431173399" alt="Master Yoda"/><p>You got ${score} / 10</p><p>You will know when you are calm, at peace...</p><button class="restartButton">Restart Quiz</button></div>`);
+    $('.showQuest').html(`<div class="almost"><h2>Do, or do not. There is no try.</h2><img class="medium" src="" alt="Master Yoda"/><p>You got ${score} / 10</p><p>You will know when you are calm, at peace...</p><button class="restartButton">Restart Quiz</button></div>`);
   } else {
-    $('.showQuest').html(`<div class="fail"><h2>I find your lack of knowledge disturbing!</h2><img class="low" src="https://www110.lunapic.com/do-not-link-here-use-hosting-instead/156418407564205706?2495154692" alt="Darth Vader"/><p>You got ${score} / 10</p><p>Do not underestimate the power of the force.</p><button class="restartButton">Restart Quiz</button></div>`);
+    $('.showQuest').html(`<div class="fail"><h2>I find your lack of knowledge disturbing!</h2><img class="low" src="" alt="Darth Vader"/><p>You got ${score} / 10</p><p>Do not underestimate the power of the force.</p><button class="restartButton">Restart Quiz</button></div>`);
   }
 }
 
