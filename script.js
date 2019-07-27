@@ -104,11 +104,11 @@ function newScore() {
 
 function userResults() {
   if (score >= 8) {
-    $('.showQuest').html(`<div class="results correctFeedback"><h2>Good. Gooood!</h2><img src="https://banner2.kisspng.com/20180412/eiq/kisspng-star-wars-battlefront-ii-palpatine-anakin-skywalke-darth-vader-5ad00eb85594f7.1932252115235846963506.jpg" alt="Emperor Palpatine"/><p>You got ${score} / 10</p><p>I can feel the force flowing through you!</p><button class="restartButton">Restart Quiz</button></div>`);
+    $('.showQuest').html(`<div class="results correctFeedback"><h2>Good. Gooood!</h2><img src="https://www110.lunapic.com/do-not-link-here-use-hosting-instead/156418407564205706?9726548158" alt="Emperor Palpatine"/><p>You got ${score} / 10</p><p>I can feel the force flowing through you!</p><button class="restartButton">Restart Quiz</button></div>`);
   } else if (score < 8 && score >= 5) {
-    $('.showQuest').html(`<div class="results correctFeedback"><h2>Do or do not. There is no try.</h2><img src="https://banner2.kisspng.com/20180202/lzq/kisspng-yoda-darth-maul-star-wars-jedi-star-wars-transparent-background-5a7487326a2b16.7780970115175862264349.jpg" alt="Master Yoda"/><p>You got ${score} / 10</p><p>Not bad, but not good either.</p><button class="restartButton">Restart Quiz</button></div>`);
+    $('.showQuest').html(`<div class="results correctFeedback"><h2>Do, or do not. There is no try.</h2><img src="https://www110.lunapic.com/do-not-link-here-use-hosting-instead/156418407564205706?2431173399" alt="Master Yoda"/><p>You got ${score} / 10</p><p>Not bad, but not good either.</p><button class="restartButton">Restart Quiz</button></div>`);
   } else {
-    $('.showQuest').html(`<div class="results correctFeedback"><h2>I find your lack of knowledge disturbing</h2><img src="https://banner2.kisspng.com/20180329/vhq/kisspng-star-wars-the-force-unleashed-ii-anakin-skywalker-darth-vader-5abd0ea6990b60.5714685715223394946269.jpg" alt="Darth Vader"/><p>You got ${score} / 10</p><p>Do not underestimate the power of the force.</p><button class="restartButton">Restart Quiz</button></div>`);
+    $('.showQuest').html(`<div class="results correctFeedback"><h2>I find your lack of knowledge disturbing!</h2><img src="https://www110.lunapic.com/do-not-link-here-use-hosting-instead/156418407564205706?2495154692" alt="Darth Vader"/><p>You got ${score} / 10</p><p>Do not underestimate the power of the force.</p><button class="restartButton">Restart Quiz</button></div>`);
   }
 }
 
