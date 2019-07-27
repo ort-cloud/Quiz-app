@@ -6,7 +6,7 @@ function questSpawn() {
     return `<div class="question-${qNum}">
     <h2>${STORE[qNum].question}</h2>
     <h3>You may fire when ready.</h3>
-    <form>
+    <form id="myForm">
     <fieldset>
     <label class="selectAns">
     <input type="radio" value="${STORE[qNum].answers[0]}" name="answer" required>
@@ -55,7 +55,6 @@ function startQuiz() {
 
 function renderQuest() {
   $(".showQuest").html(questSpawn());
-  console.log('renderQuest ran');
   userAnswer();
 }
 
