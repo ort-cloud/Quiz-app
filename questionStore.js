@@ -68,7 +68,7 @@ const STORE = [
     altWrong: 'Admiral Ackbar'
   },
   {
-    question: "Which character made the order to destroy the planet?",
+    question: "Which character gave the order to destroy the planet?",
     answers: [
       "Darth Vader",
       "Grand Moff Tarkin",

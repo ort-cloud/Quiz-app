@@ -129,6 +129,11 @@ input {
   font-size: 20px;
 }
 
+img[src='https://tchol.org/images/admiral-ackbar-png-9.png'] {
+  height: 15%;
+  width: 15%;
+}
+
 .nextButton {
   font-family: 'Gugi', cursive;
   font-size: 100%;
@@ -159,9 +164,15 @@ input {
   color: #d4b300;
 }
 
+.almost p {
+  margin-top: 3px;
+}
+
+
+
 .medium {
-  height: 15%;
-  width: 15%;
+  height: 13%;
+  width: 13%;
 }
 
 .low {
