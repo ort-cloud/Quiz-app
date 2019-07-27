@@ -9,14 +9,13 @@ html {
 }
 
 body {
+  margin-top: 4%;
   margin-left: auto;
   margin-right: auto;
-  padding: 100px;
   text-align: center;
   color: #d4b300;
   font-family: 'Gugi', cursive;
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(https://images.pexels.com/photos/1341279/pexels-photo-1341279.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
-  
   background-position: cover; 
 }
 
@@ -25,11 +24,12 @@ ul {
 }
 
 .logo {
-  height: 30%;
-  width: 30%;
+  height: 25%;
+  width: 25%;
 }
 
 .right-answer {
+  margin-top: 3%
   margin: 10px;
   font-size: 20px;
 }
@@ -102,20 +102,40 @@ input[type="radio"] {
   font-size: 200%;
   border: 0;
   border-radius: 5px;
-  height: 20px;
-  width: 90px !important;
-  color: #d4b300;
-  background-color: transparent;
+  height: 60px;
+  width: 95px !important;
+  background-color:  #d4b300;
 }
 
+.submitButton:hover {
+  background-color: transparent;
+  color: #d4b300;
+}
 
+.posFeedback {
+  font-size: 20px;
+}
 
+.negFeedback p {
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
 
+.negFeedback {
+  font-size: 20px;
+}
 
+.nextButton {
+  font-family: 'Gugi', cursive;
+  font-size: 100%;
+  border: 0;
+  border-radius: 5px;
+  height: 30px;
+  width: 47px;
+  background-color:  #d4b300;
+}
 
-
-
-
-
-
-
+.nextButton:hover {
+  background-color: transparent;
+  color: #d4b300;
+}

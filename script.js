@@ -94,7 +94,7 @@ function positiveFeedback() {
 
 function negativeFeedback() {
   let correctAnswer = `${STORE[qNum].correctAnswer}`;
-  $(".showQuest").html(`<div class="negFeedback"><div class="icon"</div><img src="${STORE[qNum].wrongImg}" alt="${STORE[qNum].altWrong}"/></div><p>IT'S A TRAP!</p><br></br>That is not correct. The correct answer is <span>"${correctAnswer}"</span><button type=button class="nextButton">Next</button></div>`);
+  $(".showQuest").html(`<div class="negFeedback"><div class="icon"</div><img src="${STORE[qNum].wrongImg}" alt="${STORE[qNum].altWrong}"/></div><p>IT'S A TRAP!</p>The correct answer is <span>"${correctAnswer}"</span><br></br><button type=button class="nextButton">Next</button></div>`);
 }
 
 function newScore() {
