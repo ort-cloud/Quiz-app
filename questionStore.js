@@ -9,7 +9,7 @@ const STORE = [
     altWrong: 'Admiral Ackbar'
   },
   {
-    question: "Of those ‘Episodes’ which is the first released?",
+    question: "Of those ‘Episodes’ which was the first released?",
     answers: [2, 4, 6, 8],
     correctAnswer: "4",
     correctImg: 'http://www.sclance.com/clipart/han-solo-clip-art/han-solo-clip-art_964559.png',
