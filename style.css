@@ -4,6 +4,13 @@
   box-sizing: border-box;
 }
 
+html {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(https://images.pexels.com/photos/1341279/pexels-photo-1341279.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+  background-position: cover;
+  background-size: cover;
+}
+
 body {
   margin-top: 4%;
   margin-left: auto;
@@ -11,9 +18,10 @@ body {
   text-align: center;
   color: #d4b300;
   font-family: "Gugi", cursive;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(https://images.pexels.com/photos/1341279/pexels-photo-1341279.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+  /* background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(https://images.pexels.com/photos/1341279/pexels-photo-1341279.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
   background-position: cover;
-  background-size: cover;
+  background-size: cover; */
 }
 
 ul {
