@@ -4,10 +4,6 @@
   box-sizing: border-box;
 }
 
-html {
-  font-family: 'Star Jedi', arial;
-}
-
 body {
   margin-top: 4%;
   margin-left: auto;
@@ -15,7 +11,7 @@ body {
   text-align: center;
   color: #d4b300;
   font-family: 'Gugi', cursive;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(https://images.pexels.com/photos/1341279/pexels-photo-1341279.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("./assets/space-background.jpeg") /* url(https://images.pexels.com/photos/1341279/pexels-photo-1341279.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260) */;
   background-position: cover; 
 }
 
@@ -129,11 +125,6 @@ input {
   font-size: 20px;
 }
 
-img[src='https://tchol.org/images/admiral-ackbar-png-9.png'] {
-  height: 15%;
-  width: 15%;
-}
-
 .nextButton {
   font-family: 'Gugi', cursive;
   font-size: 100%;
@@ -189,13 +180,9 @@ img[src='https://tchol.org/images/admiral-ackbar-png-9.png'] {
 }
 
 @media screen and (max-width: 426px){
-  img[src="https://www.nicepng.com/png/full/415-4155725_star-wars-logo-edit-small-transparent-background-star.png" ]{
+  img[src='assets/star-wars-logo.png' ]{
     height: 35%;
     width: 35%;
-  }
-  img[src='https://tchol.org/images/admiral-ackbar-png-9.png'] {
-    height: 50%;
-    width: 50%;
   }
   img[src="assets/vader.png"] {
     height: 80%;
@@ -221,17 +208,13 @@ img[src='https://tchol.org/images/admiral-ackbar-png-9.png'] {
 
 
 @media screen and (max-width:768px) {
-  img[src="https://www.nicepng.com/png/full/415-4155725_star-wars-logo-edit-small-transparent-background-star.png" ]{
+  img[src='assets/star-wars-logo.png' ]{
     height: 35%;
     width: 35%;
   }
-  img[src='https://tchol.org/images/admiral-ackbar-png-9.png'] {
-    height: 50%;
-    width: 50%;
-  }
   img[src="assets/vader.png"] {
-    height: 80%;
-    width: 80%;
+    height: 70%;
+    width: 70%;
   }
   img[src="assets/yoda.png"] {
     height: 60%;
@@ -252,3 +235,23 @@ img[src='https://tchol.org/images/admiral-ackbar-png-9.png'] {
     width: 65px;
   }
 }
+
+@media screen and (min-width:769px){
+  img[src='assets/star-wars-logo.png' ]{
+    height: 35%;
+    width: 35%;
+  }
+  img[src="assets/vader.png"] {
+    height: 50%;
+    width: 50%;
+  }
+  img[src="assets/yoda.png"] {
+    height: 60%;
+    width: 60%;
+  }
+  img[src="assets/palpatine.png"] {
+    height: 55%;
+    width: 55%;
+  }
+}
+
