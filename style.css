@@ -11,9 +11,7 @@ body {
   text-align: center;
   color: #d4b300;
   font-family: "Gugi", cursive;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url("./assets/space-background.jpeg")
-      /* url(https://images.pexels.com/photos/1341279/pexels-photo-1341279.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260) */;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(https://images.pexels.com/photos/1341279/pexels-photo-1341279.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
   background-position: cover;
   background-size: cover;
 }
@@ -239,7 +237,7 @@ input {
   }
 }
 
-@media screen and (min-width: 769px) and (max-width: 1024px) {
+@media screen and (min-width: 769px) {
   img[src="assets/star-wars-logo.png"] {
     height: 35%;
     width: 35%;
