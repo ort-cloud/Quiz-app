@@ -1,6 +1,6 @@
 # Star Wars Quiz App
 
-Scout the Station here! https://ort-cloud.github.io/The-ISS-Scout/
+Check it out here! https://ort-cloud.github.io/star-wars-quiz-app/
 
 ## Summary
 
@@ -9,8 +9,6 @@ A simple web app testing the users knowledge of the first three Star Wars Films.
 ![Screenshot](assets/project-image.png)
 
 ## Implemented Technologies
-
-To build our application, we've used the following web programming languages:
 
 - jQUery
 - JavaScript
